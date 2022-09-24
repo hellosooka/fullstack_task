@@ -1,0 +1,9 @@
+.extensionData {
+	display: grid;
+	grid-template-columns: auto;
+
+	margin: 0 auto;
+	width: 80%;
+
+	margin-bottom: 50px;
+}

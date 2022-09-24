@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import  tokenReducer  from './authSlice/authSlice'
 
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
 		authToken: tokenReducer
 	}

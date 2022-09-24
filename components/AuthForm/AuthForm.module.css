@@ -12,8 +12,14 @@
 	border: 2px gray solid;
 	border-radius: 10px ;
 	padding: 5px;
-	width: 45%;
+	width: 40%;
 	margin: 0 auto;
+
+	transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.input:focus {
+	width: 39%;
 }
 
 .button {
@@ -36,6 +42,15 @@
 .button:hover {
 	width: 25%;
 	font-size: 23px;
+	height: 57px;
 	
-	
+}
+
+.failed {
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0px 0px 10px 0px;
+
+	transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }

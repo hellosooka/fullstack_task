@@ -1,10 +1,22 @@
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect } from 'react'
 import { AuthForm } from '../../components/AuthForm/AuthForm'
+import { useAppSelector } from '../../hooks/useApp'
 import style from './auth.module.css'
 
 
 
 function Auth() {
+
+	const router = useRouter()
+
+  const statusSelector = useAppSelector(state => state.authToken.status)
+
+  useEffect(() => {
+		if(statusSelector == 'succeeded') {
+			router.push('/ExtensionNumbers')
+		}
+  }, [statusSelector])
 
 
 	return (
