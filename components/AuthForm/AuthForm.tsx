@@ -13,8 +13,8 @@ const submitForm = (event: { preventDefault: () => void }) => {
 
 export const AuthForm = () => {
 
-	const username = useInput("")
-	const password = useInput("")
+	const username = useInput("Zemtsov_Leonid")
+	const password = useInput("guest")
 
   const dispatch = useAppDispatch()
 	const status = useAppSelector(state => state.authToken.status)
